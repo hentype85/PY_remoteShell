@@ -8,8 +8,8 @@
 `netsh advfirewall firewall show rule name=all dir=in`
 ### Listar todas las reglas de salida en el firewall de Windows:
 `netsh advfirewall firewall show rule name=all dir=out`
-
-
+  
+  
 ### Listar todas las conexiones de red en Linux:
 `ss -a`
 ### Filtrar conexiones en el puerto 54321 en Linux:
