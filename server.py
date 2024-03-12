@@ -13,12 +13,12 @@ def config_port_firewall():
         try:
             # regla para permitir trafico entrante en el puerto
             subprocess.run(['netsh', 'advfirewall', 'firewall', 'add', 'rule',
-                            'name=Python_Server_Inbound', 'dir=in', 'action=allow',
+                            'name=Python_Server_in', 'dir=in', 'action=allow',
                             'protocol=TCP', 'localport=54321'], check=True)
 
             # regla para permitir trafico saliente en el puerto
             subprocess.run(['netsh', 'advfirewall', 'firewall', 'add', 'rule',
-                            'name=Python_Server_Outbound', 'dir=out', 'action=allow',
+                            'name=Python_Server_out', 'dir=out', 'action=allow',
                             'protocol=TCP', 'localport=54321'], check=True)
 
             print("Firewall rule added successfully.")
