@@ -28,15 +28,20 @@ Listar todas las reglas de salida en Linux:
 sudo iptables -L -t nat
 ```
 
+## Windows:
+
+### Server
+`python3 server.py`
 ```
 C:\Users\..\Desktop\PY_remoteShell>python3 server.py
 Listening on 0.0.0.0:54321
 
 {'ip': ....blabla}
 ```
-
+### Client
+`$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python .\client.py`
 ```
-C:\Users\..\Desktop\PY_remoteShell>python3 client.py
+C:\Users\marti\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python .\client.py
 >> dir
  Directorio de C:\Users\..\Desktop\PY_remoteShell
 
@@ -48,4 +53,20 @@ C:\Users\..\Desktop\PY_remoteShell>python3 client.py
                3 archivos          6.153 bytes
                2 dirs  21.543.895.040 bytes libres
 >>
+```
+
+## Linux:
+### Server
+`python3 server.py`
+```
+python3 server.py
+...
+
+```
+### Client
+`export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 client.py`
+```
+export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 client.
+...
+
 ```

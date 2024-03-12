@@ -130,7 +130,6 @@ server_socket.listen(1)
 
 print('Listening on {}:{}\n\n{}'.format(host, port, get_data()))
 
-
 while True:
     try:
         # esperar la conexion del cliente y aceptar

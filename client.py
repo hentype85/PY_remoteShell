@@ -1,13 +1,16 @@
 import socket
 import os
 
-host = 'localhost'
-port = 54321
-
-client_socket = socket.socket()
+try:
+    # variables de entorno del servidor
+    host = os.getenv('SERVER_HOST')
+    port = int(os.getenv('SERVER_PORT'))
+except (Exception, ValueError, TypeError):
+    print("\nError in server environment variables\nExample:\nSERVER_HOST='localhost' SERVER_PORT='54321' python3 client.py\n")
 
 # direccion del servidor
 server_address = (host, port)
+client_socket = socket.socket()
 
 try:
     # conectar al servidor
