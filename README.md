@@ -5,6 +5,7 @@ Listar todas las conexiones de red en Windows:
 netstat -a
 
 Filtrar conexiones en el puerto 54321 en Windows:
+netstat -a | findstr "54321"
 netstat -a | Select-String "54321"
 
 Listar todas las reglas de entrada en el firewall de Windows:
