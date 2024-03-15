@@ -42,7 +42,7 @@ Listening on 0.0.0.0:54321
 ### Client
 `$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python .\client.py`
 ```
-C:\Users\marti\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python .\client.py
+C:\Users\..\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py
 >> dir
  Directorio de C:\Users\..\Desktop\PY_remoteShell
 
