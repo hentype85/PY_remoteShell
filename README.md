@@ -1,5 +1,7 @@
 # Simple remote 
 
+## Windows:
+
 ```
 Listar todas las conexiones de red en Windows:
 netstat -a
@@ -15,22 +17,6 @@ Listar todas las reglas de salida en el firewall de Windows:
 netsh advfirewall firewall show rule name=all dir=out
 ```
 
-```
-Listar todas las conexiones de red en Linux:
-ss -a
-
-Filtrar conexiones en el puerto 54321 en Linux:
-ss -a | grep ':54321'
-
-Listar todas las reglas de entrada en Linux:
-sudo iptables -L`
-
-Listar todas las reglas de salida en Linux:
-sudo iptables -L -t nat
-```
-
-## Windows:
-
 ### Server
 `python3 server.py`
 ```
@@ -40,7 +26,7 @@ Listening on 0.0.0.0:54321
 {'ip': ....blabla}
 ```
 ### Client
-`$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python .\client.py`
+`$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py`
 ```
 C:\Users\..\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py
 >> dir
@@ -57,6 +43,21 @@ C:\Users\..\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PO
 ```
 
 ## Linux:
+
+```
+Listar todas las conexiones de red en Linux:
+ss -a
+
+Filtrar conexiones en el puerto 54321 en Linux:
+ss -a | grep ':54321'
+
+Listar todas las reglas de entrada en Linux:
+sudo iptables -L`
+
+Listar todas las reglas de salida en Linux:
+sudo iptables -L -t nat
+```
+
 ### Server
 `python3 server.py`
 ```
@@ -65,9 +66,9 @@ python3 server.py
 
 ```
 ### Client
-`export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 client.py`
+`export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 .\client.py`
 ```
-export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 client.
+export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 .\client.py
 ...
 
 ```

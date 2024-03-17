@@ -113,8 +113,8 @@ def get_data():
 
 ############################################################################################################
 
-#configurar el puerto en el firewall
-config_port_firewall()
+# configurar el puerto en el firewall
+# config_port_firewall()
 
 host = '0.0.0.0'
 port = 54321
