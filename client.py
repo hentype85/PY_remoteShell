@@ -8,9 +8,9 @@ try:
 except (Exception, ValueError, TypeError):
     print("\nError in server environment variables \
           \n \
-          \nEjemplo para Windows: \
+          \nWindows: \
           \n$env:SERVER_HOST='localhost'; $env:SERVER_PORT='54321'; python3 .\client.py \
-          \nEjemplo para Linux: \
+          \nLinux: \
           \nexport SERVER_HOST='localhost' SERVER_PORT='54321' python3 client.py \
           \n \
           \n")
