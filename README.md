@@ -1,7 +1,6 @@
 # Simple remote 
 
 ## Windows:
-
 ```
 Listar todas las conexiones de red en Windows:
 netstat -a
@@ -43,7 +42,6 @@ C:\Users\..\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PO
 ```
 
 ## Linux:
-
 ```
 Listar todas las conexiones de red en Linux:
 ss -a
@@ -62,13 +60,10 @@ sudo iptables -L -t nat
 `python3 server.py`
 ```
 python3 server.py
-...
-
 ```
 ### Client
 `export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 .\client.py`
 ```
 export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 .\client.py
-...
 
 ```
