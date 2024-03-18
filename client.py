@@ -6,14 +6,7 @@ try:
     host = os.getenv('SERVER_HOST')
     port = int(os.getenv('SERVER_PORT'))
 except (Exception, ValueError, TypeError):
-    print("\nError in server environment variables \
-          \n \
-          \nWindows: \
-          \n$env:SERVER_HOST='localhost'; $env:SERVER_PORT='54321'; python3 .\client.py \
-          \nLinux: \
-          \nexport SERVER_HOST='localhost' SERVER_PORT='54321' python3 client.py \
-          \n \
-          \n")
+    print("Error in server environment variables")
 
 # direccion del servidor
 server_address = (host, port)

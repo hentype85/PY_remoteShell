@@ -45,11 +45,7 @@ def handle_client(client_socket):
             # recibir comando del cliente
             command = client_socket.recv(4096).decode()
 
-            # salir
-            if command == 'exit':
-                break
-
-            elif command.split(" ")[0] == 'cd':
+            if command.split(" ")[0] == 'cd':
                 try:
                     # cambio de directorio
                     os.chdir(" ".join(command.split(" ")[1:]))

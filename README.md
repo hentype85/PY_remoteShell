@@ -17,15 +17,20 @@ netsh advfirewall firewall show rule name=all dir=out
 ```
 
 ### Server
-`python3 server.py`
+`python3 .\server.py`
 ```
-C:\Users\..\Desktop\PY_remoteShell>python3 server.py
+C:\Users\..\Desktop\PY_remoteShell>python3 .\server.py
 Listening on 0.0.0.0:54321
 
 {'ip': ....blabla}
 ```
 ### Client
+PowerShell:
 `$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py`
+CMD:
+`set SERVER_HOST=localhost`
+`set SERVER_PORT=54321`
+`python3 .\client.py`
 ```
 C:\Users\..\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py
 >> dir
@@ -58,12 +63,6 @@ sudo iptables -L -t nat
 
 ### Server
 `python3 server.py`
-```
-python3 server.py
-```
+
 ### Client
 `export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 .\client.py`
-```
-export SERVER_HOST="localhost"; export SERVER_PORT="54321"; python3 .\client.py
-
-```
