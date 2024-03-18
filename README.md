@@ -26,10 +26,10 @@ Listening on 0.0.0.0:54321
 ```
 ### Client
 PowerShell:
-`$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py`
+`$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py`  
 CMD:
-`set SERVER_HOST=localhost`
-`set SERVER_PORT=54321`
+`set SERVER_HOST=localhost`  
+`set SERVER_PORT=54321`  
 `python3 .\client.py`
 ```
 C:\Users\..\Desktop\PY_remoteShell> $env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py
