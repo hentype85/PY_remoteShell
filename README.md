@@ -25,9 +25,9 @@ Listening on 0.0.0.0:54321
 {'ip': ....blabla}
 ```
 ### Client
-PowerShell:
+PowerShell:  
 `$env:SERVER_HOST="localhost"; $env:SERVER_PORT="54321"; python3 .\client.py`  
-CMD:
+CMD:  
 `set SERVER_HOST=localhost`  
 `set SERVER_PORT=54321`  
 `python3 .\client.py`
